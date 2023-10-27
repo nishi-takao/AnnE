@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel='stylesheet' href='../css/font-awesome.min.css' />
+<link rel='stylesheet' href='../css/easel.css' />
+<link rel='stylesheet' href='../css/SVGEditor.css' title='SVGEditor' />
+<script src="../js/render/easel.js"></script>
+<title></title>
+</head>
+<body>
+<p id='menu-button' title='Show/Hide menu'>&#xf0c9;</p>
+<div id='menu-guard'>
+<div id='menu'>
+<div id='menu-header'>
+</div><!-- end of menu-header -->
+<div id='menu-body'>
+
+<dl id='menu-draw-mode'>
+<dt>Shape</dt>
+<dd class='icon'>
+  <span id='menu-shape-box' title='Box'>&#xf096;</span>
+  <span id='menu-shape-polygon' title='Polygon'>&#xf097;</span>
+  <span id='menu-shape-oval' title='Oval'>&#xf1db;</span>
+  <span id='menu-shape-none' title='None'>&#xf05e;</span>
+</dl>
+
+<hr />
+
+<dl id='menu-zoom'>
+<dt>Zoom</dt>
+<dd class='icon'><span id='menu-zoom-out' title="Zoom out">&#xf056;</span>
+  <span id='menu-zoom-in' title="Zoom in">&#xf055;</span>
+  <span id='menu-original-size' title="Original size">&#xf192;</span>
+  <span id='menu-fit-screen' title="Fit to screen">&#xf26c;</span></dd>
+<dd class='text'><span id='menu-zoom-scale'
+		       contentEditable='true'></span>%</dd>
+
+</dl>
+<dl id='menu-toggle-fileinfo'>
+<dt>Show Image Information</dt>
+<dd class='icon'><span id='menu-fileinfo-button'>&#xf205;</span></dd>
+</dl>
+
+<hr/>
+
+<dl id='menu-border-attr'>
+<dt>Segment Border Size</dt>
+<dd class='text'><span id='menu-border-size-dec'
+		       class='button' title='Decrement'>&#xf13a;</span>
+<span id='menu-border-size'
+		       contentEditable='true'>5</span>px
+<span id='menu-border-size-inc'
+      class='button' title='Increment'>&#xf139;</span></dd>
+</dl>
+<dl id='menu-border-scale'>
+<dt>Scale Independent Border</dt>
+<dd class='icon'><span id='menu-border-scale-button'>&#xf205;</span></dd>
+</dl>
+
+<hr/>
+
+<dl id='menu-global-setting'>
+<dt>Global settings</dt>
+<dd class='icon'><span id='menu-global-setting-button' class='disable'>&#xf013;</span></dd>
+</dl>
+
+</dl>
+
+
+</div><!-- end of menu-body -->
+</div><!-- end of menu -->
+</div><!-- end of menu-guard -->
+
+<div id='title-bar'>
+<div id='title-bar-right-padding'></div>
+<h1 id='file-info'><span id='filename'></span>
+  (<span id='title-image-size'></span>
+  | <span id='title-zoom-scale'></span>%)
+  [ <span id='title-segment-shape'></span> ]</h1>
+</div>
+<div id='picture-frame'>
+<svg id='draw-area' preserveAspectRatio='xMinYMin meet'></svg>
+</div>
+</body>
+</html>

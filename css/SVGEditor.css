@@ -1,0 +1,72 @@
+#draw-area image{
+    margin:0px;
+    padding:0px;
+}
+#draw-area .segment{
+    stroke-width:3;
+    fill:none;
+    cursor:default;
+}
+#draw-area polyline.segment{
+    stroke-dasharray:3,3;
+}
+
+#draw-area .segment:hover{
+    stroke-width:3;
+}
+#draw-area polyline.segment:hover{
+    stroke-width:3;
+}
+
+#draw-area circle.vertex{
+    stroke:black;
+    stroke-width:1;
+    r:4;
+    fill:white;
+}
+#draw-area circle.vertex:hover{
+    r:6;
+    fill:black;
+}
+
+#draw-area g.shape-box rect{
+    stroke:black;
+    stroke-width:1;
+    stroke-dasharray:2,2;
+    fill:white;
+    fill-opacity:0.5;
+    cursor:all-scroll;
+}
+#draw-area g.shape-box polygon{
+    stroke-width:3;
+    fill:none;
+    cursor:default;
+    stroke-dasharray:3,3;
+}
+
+#draw-area g.shape-box circle.handle{
+    stroke:black;
+    stroke-width:1;
+    r:4;
+    fill:white;
+}
+#draw-area g.shape-box circle.handle:hover{
+    r:6;
+}
+#draw-area g.shape-box circle.handle.lefttop,
+#draw-area g.shape-box circle.handle.rightbottom{
+    cursor:nw-resize;
+}
+#draw-area g.shape-box circle.handle.righttop,
+#draw-area g.shape-box circle.handle.leftbottom{
+    cursor:ne-resize;
+}
+#draw-area g.shape-box circle.handle.top,
+#draw-area g.shape-box circle.handle.bottom{
+    cursor:n-resize;
+}
+#draw-area g.shape-box circle.handle.right,
+#draw-area g.shape-box circle.handle.left{
+    cursor:e-resize;
+}
+

@@ -1,0 +1,19 @@
+{
+  "name": "anne",
+  "productName": "AnnE",
+  "version": "0.0.0",
+  "description": "image dataset ANNotation Editor",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^1.7.9",
+    "electron-config": "^1.0.0",
+    "file-type": "^7.4.0",
+    "image-size": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NISHI, Takao <nishi.t.es@osaka-u.ac.jp>",
+  "license": "BSD-2-Clause"
+}
