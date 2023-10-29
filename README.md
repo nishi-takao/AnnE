@@ -14,17 +14,24 @@ It is still only possible to draw and edit shapes on arbitrary images.
 ### Dependency
 
  + [Node.js](https://nodejs.org/)
-  + Electron
-  + fontawesome/fontawesome-free
-  + oboto-fontface
+   + Electron
+   + @fontawesome/fontawesome-free
+   + roboto-fontface
 
 
 1. install node.js and npm
 2. run `npm install` to install the remaining dependent libraries (electron, fontawesome-free and roboto-fontface)
 
+```
+$ cd Path/where/AnnE/downloaded
+$ npm install
+```
+
+
 ## Running
 ```
-./node_modules/.bin/electron .
+$ cd Path/where/AnnE/downloaded
+$ ./node_modules/.bin/electron .
 ```
 
 
